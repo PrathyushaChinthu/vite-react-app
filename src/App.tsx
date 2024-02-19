@@ -1,21 +1,40 @@
-import ListGroup from "./components/ListGroup";
-import "./App.css";
+import Like from "./components/Like";
 function App() {
-  const items = ["New York", "San Francisco", "Tokyo", "London"];
-  const handleSelectItem = (item: string) => {
-    console.log(item);
-  };
   return (
     <div>
-      <ListGroup
-        items={items}
-        heading="cities"
-        onSelectItem={handleSelectItem}
-      />
+      <Like onClick={() => console.log("clicked")} />
     </div>
   );
 }
 export default App;
+
+//import Button from "./components/Buttons/Button";
+//function App() {
+//return (
+//<div>
+//<Button onClick={() => {}}>My button</Button>
+//</div>
+//);
+//}
+//export default App;
+
+//import ListGroup from "./components/ListGroup";
+//function App() {
+//const items = ["New York", "San Francisco", "Tokyo", "London"];
+//const handleSelectItem = (item: string) => {
+//console.log(item);
+//};
+//return (
+//<div>
+//<ListGroup
+//items={items}
+//heading="cities"
+//onSelectItem={handleSelectItem}
+///>
+//</div>
+//);
+//}
+//export default App;
 
 //import Alert from "./components/Alert";
 //import Button from "./components/Button";
